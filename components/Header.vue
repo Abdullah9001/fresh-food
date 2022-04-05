@@ -35,7 +35,7 @@
           <li @click="showSignin = !showSignin">Login</li>
           <li @click="showSignin = !showSignin">Signup</li>
         </div>
-        <form method="post">
+        <form v-if="showSignin" method="post">
           <div class="imgcontainer">
             <img src="man.png" alt="Avatar" class="avatar" />
           </div>
@@ -71,7 +71,7 @@
             </button>
           </div>
         </form>
-        <form >
+        <form v-else>
           <div class="container">
             <h1>Sign Up</h1>
             <p>Please fill in this form to create an account.</p>
