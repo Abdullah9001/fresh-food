@@ -153,7 +153,7 @@ import axios from 'axios'
 export default {
   data() {
     return {
-      showSignin: false,
+      showSignin: true,
 
       name: '',
       age: null,
